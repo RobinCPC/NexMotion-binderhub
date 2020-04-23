@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration version="1.0">
+  <System>
+    <SysParameters>
+      <Param Number="0x00" SubIndex="0" DataType="I32_T" Desc="Motion cycle time (us)">2000</Param>
+      <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Number of activated axis">0</Param>
+      <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Number of activated group">1</Param>
+      <Param Number="0x08" SubIndex="0" DataType="I32_T" Desc="EMG input signal configuration">0</Param>
+      <Param Number="0x08" SubIndex="1" DataType="I32_T" Desc="Source of EMG1_A input signal">0</Param>
+      <Param Number="0x08" SubIndex="2" DataType="I32_T" Desc="Source of EMG1_B input signal">0</Param>
+      <Param Number="0x08" SubIndex="3" DataType="I32_T" Desc="Source of EMG2_A input signal">0</Param>
+      <Param Number="0x08" SubIndex="4" DataType="I32_T" Desc="Source of EMG2_B input signal">0</Param>
+      <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Error output signal configuration">0</Param>
+      <Param Number="0x09" SubIndex="1" DataType="I32_T" Desc="Destinition of ERR1_A output signal">0</Param>
+      <Param Number="0x09" SubIndex="2" DataType="I32_T" Desc="Destinition of ERR1_B output signal">0</Param>
+      <Param Number="0x10" SubIndex="0" DataType="I32_T" Desc="System safety level">0</Param>
+      <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Auto enable when safety state switch to ready">0</Param>
+      <Param Number="0x11" SubIndex="0" DataType="I32_T" Desc="Enabling switch configuration">0</Param>
+      <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Source of ENEN_1A input signal">0</Param>
+      <Param Number="0x11" SubIndex="2" DataType="I32_T" Desc="Source of ENPS_1A input signal">0</Param>
+      <Param Number="0x11" SubIndex="3" DataType="I32_T" Desc="Source of ENEN_1B input signal">0</Param>
+      <Param Number="0x11" SubIndex="4" DataType="I32_T" Desc="Source of ENPS_1B input signal">0</Param>
+      <Param Number="0x11" SubIndex="5" DataType="I32_T" Desc="Source of ENEN_2A input signal">0</Param>
+      <Param Number="0x11" SubIndex="6" DataType="I32_T" Desc="Source of ENPS_2A input signal">0</Param>
+      <Param Number="0x11" SubIndex="7" DataType="I32_T" Desc="Source of ENEN_2B input signal">0</Param>
+      <Param Number="0x11" SubIndex="8" DataType="I32_T" Desc="Source of ENPS_2B input signal">0</Param>
+      <Param Number="0x12" SubIndex="0" DataType="I32_T" Desc="Safe-guard input signal configuration">0</Param>
+      <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Source of SFG_1A input signal">0</Param>
+      <Param Number="0x12" SubIndex="2" DataType="I32_T" Desc="Source of SFG_1B input signal">0</Param>
+      <Param Number="0x13" SubIndex="0" DataType="I32_T" Desc="KEY input signal configuration">0</Param>
+      <Param Number="0x13" SubIndex="1" DataType="I32_T" Desc="Source of LOCK_1A input signal">0</Param>
+      <Param Number="0x13" SubIndex="2" DataType="I32_T" Desc="Source of UNLOCK_1A input signal">0</Param>
+    </SysParameters>
+  </System>
+  <GroupList>
+    <Group Index="0">
+      <GroupDescription>Mini-BOT (Third generation)</GroupDescription>
+      <GroupAxes>
+        <Axis Index="0">
+          <AxisDescription>Joint 1</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">33</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">0</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">173.000000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-150.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">150.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">1500.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">20.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">20.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">20</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">172.000000</Param>
+          </AxisParameters>
+        </Axis>
+        <Axis Index="1">
+          <AxisDescription>Joint 2</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">33</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">1</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">200.000000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-2.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">100.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">1000.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">5.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">5.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">20</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">196.690000</Param>
+          </AxisParameters>
+        </Axis>
+        <Axis Index="2">
+          <AxisDescription>Joint 3</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">33</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">2</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">145.000000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-62.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">280.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">3000.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">20.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">20.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">22</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">-60.000000</Param>
+          </AxisParameters>
+        </Axis>
+        <Axis Index="3">
+          <AxisDescription>Joint 4</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">25</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">3</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">176.500000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-120.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">500.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">5000.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">20.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">20.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">20</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">175.000000</Param>
+          </AxisParameters>
+        </Axis>
+        <Axis Index="4">
+          <AxisDescription>Joint 5</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">20</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">4</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">105.000000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-105.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">500.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">5000.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">20.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">20.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">22</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">-100.440000</Param>
+          </AxisParameters>
+        </Axis>
+        <Axis Index="5">
+          <AxisDescription>Joint 6</AxisDescription>
+          <AxisParameters>
+            <Param Number="0x00" SubIndex="0" DataType="F64_T" Desc="Mechanical pitch (unit/rev)">360.000000</Param>
+            <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical revolution">1</Param>
+            <Param Number="0x02" SubIndex="0" DataType="I32_T" Desc="Motor revolution">10</Param>
+            <Param Number="0x03" SubIndex="0" DataType="I32_T" Desc="Encoder resolution (pulse/rev)">16000</Param>
+            <Param Number="0x04" SubIndex="0" DataType="I32_T" Desc="Encoder direction (0:Not inverse, 1:Inverse)">0</Param>
+            <Param Number="0x05" SubIndex="0" DataType="I32_T" Desc="Encoder type (0:Incremental, 1:Absolute)">0</Param>
+            <Param Number="0x06" SubIndex="0" DataType="I32_T" Desc="Enable external encoder">0</Param>
+            <Param Number="0x06" SubIndex="1" DataType="I32_T" Desc="External encoder resolution (pulse/rev)">1</Param>
+            <Param Number="0x07" SubIndex="0" DataType="I32_T" Desc="Disable sync. when servo enable">0</Param>
+            <Param Number="0x08" SubIndex="0" DataType="F64_T" Desc="Absolution position offset">0.000000</Param>
+            <Param Number="0x09" SubIndex="0" DataType="I32_T" Desc="Digital input configuration">0</Param>
+            <Param Number="0x0a" SubIndex="0" DataType="I32_T" Desc="Motor ID assignment">5</Param>
+            <Param Number="0x10" SubIndex="0" DataType="F64_T" Desc="Positive software limit">360.000000</Param>
+            <Param Number="0x10" SubIndex="1" DataType="I32_T" Desc="Enable positive software limit">1</Param>
+            <Param Number="0x10" SubIndex="2" DataType="F64_T" Desc="Negative software limit">-360.000000</Param>
+            <Param Number="0x10" SubIndex="3" DataType="I32_T" Desc="Enable negative software limit">1</Param>
+            <Param Number="0x11" SubIndex="0" DataType="F64_T" Desc="Maximum velocity limit">500.000000</Param>
+            <Param Number="0x11" SubIndex="1" DataType="I32_T" Desc="Enable max. velocity limit">1</Param>
+            <Param Number="0x12" SubIndex="0" DataType="F64_T" Desc="Maximum acceleration limit">5000.000000</Param>
+            <Param Number="0x12" SubIndex="1" DataType="I32_T" Desc="Enable max. acceleration limit">1</Param>
+            <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Safety velocity limit">5.000000</Param>
+            <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="STOP deceleration">500.000000</Param>
+            <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="STOP jerk (T-Curve=0)">1000.000000</Param>
+            <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode">0</Param>
+            <Param Number="0x28" SubIndex="0" DataType="F64_T" Desc="Base velocity">0.000000</Param>
+            <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Absolute or relative programming">0</Param>
+            <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0.">0</Param>
+            <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Maximum velocity">10.000000</Param>
+            <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration">20.000000</Param>
+            <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="deceleration">20.000000</Param>
+            <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk (T-Curve=0)">500.000000</Param>
+            <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode">0</Param>
+            <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Max. velocity for NPL">10.000000</Param>
+            <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration for NPL">100.000000</Param>
+            <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration for NPL">100.000000</Param>
+            <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk for NPL(T-Curve=0)">500.000000</Param>
+            <Param Number="0x80" SubIndex="0" DataType="I32_T" Desc="EtherCAT CiA HOME method">20</Param>
+            <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search switch">10.000000</Param>
+            <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME speed search zero">5.000000</Param>
+            <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME acceleration">100.000000</Param>
+            <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="EtherCAT CiA HOME offset">0.000000</Param>
+          </AxisParameters>
+        </Axis>
+      </GroupAxes>
+      <GroupParameters>
+        <Param Number="0x00" SubIndex="0" DataType="I32_T" Desc="Kinematics type">1</Param>
+        <Param Number="0x00" SubIndex="1" DataType="F64_T" Desc="a1">0.000000</Param>
+        <Param Number="0x00" SubIndex="2" DataType="F64_T" Desc="a2">0.000000</Param>
+        <Param Number="0x00" SubIndex="3" DataType="F64_T" Desc="a3">250.000000</Param>
+        <Param Number="0x00" SubIndex="4" DataType="F64_T" Desc="a4">70.000000</Param>
+        <Param Number="0x00" SubIndex="5" DataType="F64_T" Desc="a5">0.000000</Param>
+        <Param Number="0x00" SubIndex="6" DataType="F64_T" Desc="a6">0.000000</Param>
+        <Param Number="0x00" SubIndex="7" DataType="F64_T" Desc="d1 (mm)">339.000000</Param>
+        <Param Number="0x00" SubIndex="8" DataType="F64_T" Desc="d2 (mm)">0.000000</Param>
+        <Param Number="0x00" SubIndex="9" DataType="F64_T" Desc="d3 (mm)">0.000000</Param>
+        <Param Number="0x00" SubIndex="10" DataType="F64_T" Desc="d4 (mm)">250.000000</Param>
+        <Param Number="0x00" SubIndex="11" DataType="F64_T" Desc="d5 (mm)">0.000000</Param>
+        <Param Number="0x00" SubIndex="12" DataType="F64_T" Desc="d6 (mm)">95.000000</Param>
+        <Param Number="0x00" SubIndex="13" DataType="F64_T" Desc="PEL-J1 (Deg)">173.000000</Param>
+        <Param Number="0x00" SubIndex="14" DataType="F64_T" Desc="PEL-J2 (Deg)">200.000000</Param>
+        <Param Number="0x00" SubIndex="15" DataType="F64_T" Desc="PEL-J3 (Deg)">145.000000</Param>
+        <Param Number="0x00" SubIndex="16" DataType="F64_T" Desc="PEL-J4 (Deg)">176.500000</Param>
+        <Param Number="0x00" SubIndex="17" DataType="F64_T" Desc="PEL-J5 (Deg)">105.000000</Param>
+        <Param Number="0x00" SubIndex="18" DataType="F64_T" Desc="PEL-J6 (Deg)">360.000000</Param>
+        <Param Number="0x00" SubIndex="19" DataType="F64_T" Desc="MEL-J1 (Deg)">-150.000000</Param>
+        <Param Number="0x00" SubIndex="20" DataType="F64_T" Desc="MEL-J2 (Deg)">-2.000000</Param>
+        <Param Number="0x00" SubIndex="21" DataType="F64_T" Desc="MEL-J3 (Deg)">-62.000000</Param>
+        <Param Number="0x00" SubIndex="22" DataType="F64_T" Desc="MEL-J4 (Deg)">-120.000000</Param>
+        <Param Number="0x00" SubIndex="23" DataType="F64_T" Desc="MEL-J5 (Deg)">-105.000000</Param>
+        <Param Number="0x00" SubIndex="24" DataType="F64_T" Desc="MEL-J6 (Deg)">-360.000000</Param>
+        <Param Number="0x01" SubIndex="0" DataType="I32_T" Desc="Mechanical couple master axis">0</Param>
+        <Param Number="0x01" SubIndex="1" DataType="I32_T" Desc="Mechanical couple slave axis">1</Param>
+        <Param Number="0x01" SubIndex="2" DataType="I32_T" Desc="Compensation source type">0</Param>
+        <Param Number="0x01" SubIndex="3" DataType="F64_T" Desc="Reference master original position">0.000000</Param>
+        <Param Number="0x01" SubIndex="4" DataType="F64_T" Desc="Couple ratio (numerator)">1.000000</Param>
+        <Param Number="0x01" SubIndex="5" DataType="F64_T" Desc="Couple ratio (denominator)">1.000000</Param>
+        <Param Number="0x01" SubIndex="6" DataType="I32_T" Desc="Enable mechanical couple compensation">0</Param>
+        <Param Number="0x16" SubIndex="0" DataType="F64_T" Desc="Velocity limit of TCP in safety mode (unit/s)">250.000000</Param>
+        <Param Number="0x20" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0">0</Param>
+        <Param Number="0x21" SubIndex="0" DataType="F64_T" Desc="Deceleration (unit/s^2) for STOP">5000.000000</Param>
+        <Param Number="0x22" SubIndex="0" DataType="F64_T" Desc="Jerk (unit/s^3) for STOP (Less than 0.001:T-Curve)">50000.000000</Param>
+        <Param Number="0x23" SubIndex="0" DataType="I32_T" Desc="Halt buffer mode (0:Aborting, 1:Buffered)">0</Param>
+        <Param Number="0x30" SubIndex="0" DataType="I32_T" Desc="Target position in relative programming (0:Absolute, 1: Relative)">0</Param>
+        <Param Number="0x31" SubIndex="0" DataType="I32_T" Desc="Reserved, Set 0">0</Param>
+        <Param Number="0x32" SubIndex="0" DataType="F64_T" Desc="Velocity (unit/s) of TCP in PCS">50.000000</Param>
+        <Param Number="0x33" SubIndex="0" DataType="F64_T" Desc="Acceleration (unit/s^2) of TCP in PCS">100.000000</Param>
+        <Param Number="0x34" SubIndex="0" DataType="F64_T" Desc="Deceleration (unit/s^2) of TCP in PCS">100.000000</Param>
+        <Param Number="0x35" SubIndex="0" DataType="F64_T" Desc="Jerk(unit/s^3) of TCP in PCS(Less than 0.001:T-Curve)">10000.000000</Param>
+        <Param Number="0x36" SubIndex="0" DataType="I32_T" Desc="Buffer mode (0:Aborting, 1:Buffered, 2:Blending)">1</Param>
+        <Param Number="0x36" SubIndex="1" DataType="I32_T" Desc="Blending method (0:CornerDistance)">0</Param>
+        <Param Number="0x36" SubIndex="2" DataType="F64_T" Desc="Blending parameter (According to blending method)">0.000000</Param>
+        <Param Number="0x36" SubIndex="3" DataType="F64_T" Desc="Reserved, set 0">0.000000</Param>
+        <Param Number="0x38" SubIndex="0" DataType="I32_T" Desc="Reserved, set 0">0</Param>
+        <Param Number="0x3a" SubIndex="0" DataType="I32_T" Desc="Orientation motion independent (0: Dependent; 1: Independent)">1</Param>
+        <Param Number="0x3b" SubIndex="0" DataType="F64_T" Desc="Orientation velocity (deg/s) of TCP in PCS">25.000000</Param>
+        <Param Number="0x3c" SubIndex="0" DataType="F64_T" Desc="Orientation acceleration (deg/s^2) of TCP in PCS">50.000000</Param>
+        <Param Number="0x3d" SubIndex="0" DataType="F64_T" Desc="Orientation deceleration (deg/s^2) of TCP in PCS">50.000000</Param>
+        <Param Number="0x3e" SubIndex="0" DataType="F64_T" Desc="Orientation jerk (deg/s^3) of TCP in PCS">10000.000000</Param>
+        <Param Number="0x40" SubIndex="0" DataType="I32_T" Desc="Tool index selection for motion target">-1</Param>
+        <Param Number="0x40" SubIndex="1" DataType="I32_T" Desc="Tool index selection for read position">-2</Param>
+        <Param Number="0x41" SubIndex="0" DataType="I32_T" Desc="Tool index selection for NPL">-1</Param>
+        <Param Number="0x48" SubIndex="0" DataType="I32_T" Desc="Base index selection for motion target">-1</Param>
+        <Param Number="0x48" SubIndex="1" DataType="I32_T" Desc="Base index selection for read position">-2</Param>
+        <Param Number="0x49" SubIndex="0" DataType="I32_T" Desc="Base index selection for NPL">-1</Param>
+        <Param Number="0x52" SubIndex="0" DataType="F64_T" Desc="Velocity (unit/s) of TCP in PCS for NPL">10.000000</Param>
+        <Param Number="0x53" SubIndex="0" DataType="F64_T" Desc="Acceleration (unit/s^2) of TCP in PCS for NPL">20.000000</Param>
+        <Param Number="0x54" SubIndex="0" DataType="F64_T" Desc="Deceleration (unit/s^2) of TCP in PCS for NPL">20.000000</Param>
+        <Param Number="0x55" SubIndex="0" DataType="F64_T" Desc="Jerk (unit/s^3) of TCP in PCS for NPL(Less than 0.001:T-Curve)">0.000000</Param>
+        <Param Number="0x5b" SubIndex="0" DataType="F64_T" Desc="Orientation velocity (deg/s) of TCP in PCS for NPL">10.000000</Param>
+        <Param Number="0x5c" SubIndex="0" DataType="F64_T" Desc="Orientation acceleration (deg/s^2) of TCP in PCS for NPL">20.000000</Param>
+        <Param Number="0x5d" SubIndex="0" DataType="F64_T" Desc="Orientation deceleration (deg/s^2) of TCP in PCS for NPL">20.000000</Param>
+        <Param Number="0x5e" SubIndex="0" DataType="F64_T" Desc="Orientation jerk (deg/s^3) of TCP in PCS for NPL(Less than 0.001:T-Curve)">0.000000</Param>
+        <Param Number="0x80" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x80" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x80" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x80" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x80" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x80" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x81" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x81" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x81" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">91.000000</Param>
+        <Param Number="0x81" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x81" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x81" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x82" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x83" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x84" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x85" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x86" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x87" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x88" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x89" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8a" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8b" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8c" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8d" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8e" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="0" DataType="F64_T" Desc="Offset along flange x-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="1" DataType="F64_T" Desc="Offset along flange y-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="2" DataType="F64_T" Desc="Offset along flange z-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="3" DataType="F64_T" Desc="Rotation angle about flange z-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="4" DataType="F64_T" Desc="Rotation angle about flange y-axis">0.000000</Param>
+        <Param Number="0x8f" SubIndex="5" DataType="F64_T" Desc="Rotation angle about flange x-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc0" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc1" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">350.000000</Param>
+        <Param Number="0xc1" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc1" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">250.000000</Param>
+        <Param Number="0xc1" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc1" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc1" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc1" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc2" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc2" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc3" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc3" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc4" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc4" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc5" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc5" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc6" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc6" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc7" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc7" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc8" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc8" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xc9" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xc9" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xca" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xca" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xcb" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xcb" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xcc" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xcc" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xcd" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xcd" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xce" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xce" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xcf" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xcf" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd0" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd0" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd1" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd1" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd2" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd2" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd3" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd3" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd4" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd4" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd5" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd5" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd6" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd6" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd7" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd7" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd8" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd8" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xd9" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xd9" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xda" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xda" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xdb" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xdb" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xdc" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xdc" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xdd" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xdd" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xde" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xde" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+        <Param Number="0xdf" SubIndex="0" DataType="F64_T" Desc="Offset along reference base x-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="1" DataType="F64_T" Desc="Offset along reference base y-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="2" DataType="F64_T" Desc="Offset along reference base z-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="3" DataType="F64_T" Desc="Rotation angle about reference base z-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="4" DataType="F64_T" Desc="Rotation angle about reference base y-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="5" DataType="F64_T" Desc="Rotation angle about reference base x-axis">0.000000</Param>
+        <Param Number="0xdf" SubIndex="6" DataType="I32_T" Desc="Reference base index">-1</Param>
+      </GroupParameters>
+    </Group>
+  </GroupList>
+  <EtherCAT ID="0" Version="0" MType="1">
+    <ENIPath>C:\NEXCOBOT\ENI_NexCAT_Export.xml</ENIPath>
+    <EcmParamList>
+    </EcmParamList>
+    <RTIO>
+      <IoOutput>
+      </IoOutput>
+      <IoInput>
+      </IoInput>
+    </RTIO>
+    <CiAServoList>
+      <CiAServo Index="0">
+        <Description>(1001) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="0" SlaveSlotNum="0" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+      <CiAServo Index="1">
+        <Description>(1001) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="0" SlaveSlotNum="1" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+      <CiAServo Index="2">
+        <Description>(1001) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="0" SlaveSlotNum="2" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+      <CiAServo Index="3">
+        <Description>(1001) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="0" SlaveSlotNum="3" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+      <CiAServo Index="4">
+        <Description>(1002) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="1" SlaveSlotNum="0" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+      <CiAServo Index="5">
+        <Description>(1002) Model No.PB with EtherCAT Coe interface PB4D003E440</Description>
+        <MapInfo TypeOfSlave="1" SlaveAddr="1" SlaveSlotNum="1" CoeObjectOffset="0x0800" PdoMapOffset="0x0010" MinRxPdoIndex="0x1600" MaxRxPdoIndex="0x17FF" MinTxPdoIndex="0x1A00" MaxTxPdoIndex="0x1BFF"></MapInfo>
+      </CiAServo>
+    </CiAServoList>
+  </EtherCAT>
+</Configuration>
