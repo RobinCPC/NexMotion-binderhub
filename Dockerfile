@@ -85,7 +85,7 @@ RUN cd /tmp && \
     conda list python | grep '^python ' | tr -s ' ' | cut -d '.' -f 1,2 | sed 's/$/.*/' >> $CONDA_DIR/conda-meta/pinned && \
     conda install --quiet --yes conda && \
     conda install --quiet --yes pip && \
-    pip install zugbruecke && \
+    pip install zugbruecke==0.0.14 && \
     conda update --all --quiet --yes && \
     conda clean --all -f -y && \
     rm -rf /home/$NB_USER/.cache/yarn && \
@@ -140,7 +140,7 @@ EXPOSE 8888
 
 # Configure container startup
 ENTRYPOINT ["tini", "-g", "--"]
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888"]
 
 # Switch back to jovyan to avoid accidental container runs as root
 USER $NB_UID
