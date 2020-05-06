@@ -121,6 +121,7 @@ RUN conda install --quiet --yes \
 
 # Add MiniBOT config file (ncf) and clone NexMotion-Python repo to work folder
 COPY ./config/NexMotionNcf.ncf /root/prefix32/drive_c/NEXCOBOT/NexMotionNcf.ncf
+COPY ./robot_control_with_ipywidget.ipynb /home/jovyan/work/robot_control_with_ipywidget.ipynb
 RUN cd /home/$NB_USER/work && \
     git clone https://github.com/RobinCPC/NexMotion-Python_API.git && \
     cd NexMotion-Python_API && \
