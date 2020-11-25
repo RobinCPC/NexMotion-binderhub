@@ -1,6 +1,6 @@
 FROM robincpc/wine-x11-gmc:1.0.3.97
 
-MAINTAINER Chien-Pin Chen <chienpinchen@gmail.com>
+LABEL maintainer="Chien-Pin Chen <chienpinchen@gmail.com>"
 # arg for create user (adopted from jupyter-stack base-notebook
 ARG NB_USER="jovyan"
 ARG NB_UID="1000"
@@ -109,7 +109,10 @@ RUN conda install --quiet --yes \
     'notebook=6.0.3' \
     'jupyterhub=1.1.0' \
     'jupyterlab=2.0.1' \
-    pandas numpy matplotlib ipympl && \
+    'pandas=1.1.4' \
+    'numpy=1.19.4' \
+    'matplotlib=3.3.3' \
+    'ipympl=0.5.8' && \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib && \
     conda clean --all -f -y && \
     npm cache clean --force && \
@@ -121,7 +124,7 @@ RUN conda install --quiet --yes \
 
 # Add MiniBOT config file (ncf) and clone NexMotion-Python repo to work folder
 COPY ./config/NexMotionNcf.ncf /root/prefix32/drive_c/NEXCOBOT/NexMotionNcf.ncf
-COPY ./robot_control_with_ipywidget.ipynb /home/jovyan/work/robot_control_with_ipywidget.ipynb
+COPY ./examples /home/jovyan/work/examples
 RUN cd /home/$NB_USER/work && \
     git clone https://github.com/RobinCPC/NexMotion-Python_API.git && \
     cd NexMotion-Python_API && \
