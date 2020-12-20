@@ -1,4 +1,4 @@
-FROM robincpc/wine-x11-gmc:1.0.3.97
+FROM robincpc/wine-x11-gmc:2.0.4.5
 
 LABEL maintainer="Chien-Pin Chen <chienpinchen@gmail.com>"
 # arg for create user (adopted from jupyter-stack base-notebook
