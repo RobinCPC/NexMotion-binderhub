@@ -112,8 +112,8 @@ RUN conda install --quiet --yes \
     'pandas=1.1.4' \
     'numpy=1.19.4' \
     'matplotlib=3.3.3' \
-    'ipympl=0.5.8' && \
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib && \
+    'ipympl=0.6.3' && \
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib@0.8.3 && \
     conda clean --all -f -y && \
     npm cache clean --force && \
     jupyter notebook --generate-config && \
